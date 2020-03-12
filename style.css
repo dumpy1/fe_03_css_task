@@ -2,10 +2,18 @@ html {
     box-sizing: border-box;
 }
 
+@font-face { 
+    font-family: 'barlowblack';
+    src: url('/fonts/Barlow-Regular-webfont.woff') format('woff');         
+    font-weight: normal;
+    font-style: normal;
+} 
+
 body,
 ::before,
 ::after,
 input {
+    
     box-sizing: inherit;
     margin: 0;
     padding: 0;
@@ -15,17 +23,8 @@ body {
     background-color: #EFF6FF;    
     width: 1900px;
 }
-
-/* @font-face {
-    font-family: 'barlowblack';
-    src: url('./fonts/Barlow-Black-webfont.woff') format('woff');         
-    font-weight: 200;
-    font-style: normal;
-
-} */
-
 .main {
-    font-family: 'barlowblack', arial, Arial, Helvetica, sans-serifserif;
+    font-family: 'barlowblack', sans-serif;
     width: 1200px;
     margin: 0 auto;
     background: url('./img/bg.jpg') no-repeat left center;
@@ -181,7 +180,7 @@ input[type="radio"] {
     margin-right: 15px;
     margin-bottom: 10px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: normal;
 }
 
 .investortype label:before {
