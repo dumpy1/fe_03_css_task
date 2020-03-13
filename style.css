@@ -80,7 +80,7 @@ body {
     position: absolute;
     width: 15px;
     height: 15px;
-    background: transparent url('/img/facebook.svg') no-repeat center center;
+    background: transparent url('./img/facebook.svg') no-repeat center center;
     left: 15px;
 }
 
@@ -94,7 +94,7 @@ body {
     position: absolute;
     width: 15px;
     height: 15px;
-    background: transparent url('/img/linkedin.svg') no-repeat center center;
+    background: transparent url('./img/linkedin.svg') no-repeat center center;
     left: 15px;
 }
 
