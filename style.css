@@ -2,27 +2,28 @@ html {
     box-sizing: border-box;
 }
 
-@font-face { 
+@font-face {
     font-family: 'barlowblack';
-    src: url('/fonts/Barlow-Regular-webfont.woff') format('woff');         
+    src: url('/fonts/Barlow-Regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-} 
+}
 
 body,
 ::before,
 ::after,
 input {
-    
+
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #EFF6FF;    
+    background-color: #EFF6FF;
     width: 1900px;
 }
+
 .main {
     font-family: 'barlowblack', sans-serif;
     width: 1200px;
@@ -80,7 +81,8 @@ body {
     position: absolute;
     width: 15px;
     height: 15px;
-    background: transparent url('/img/facebook.svg') no-repeat center center;
+    background: transparent url('./img/facebook.svg') no-repeat center center;
+
     left: 15px;
 }
 
@@ -94,7 +96,8 @@ body {
     position: absolute;
     width: 15px;
     height: 15px;
-    background: transparent url('/img/linkedin.svg') no-repeat center center;
+    background: transparent url('./img/linkedin.svg') no-repeat center center;
+    background-size: contain;
     left: 15px;
 }
 
@@ -216,6 +219,7 @@ input[type="radio"] {
     right: 0;
     top: 4px;
 }
+
 .tooltip {
     display: block;
     text-align: left;
@@ -224,13 +228,55 @@ input[type="radio"] {
     font-size: 12px;
     color: #afafaf;
     box-shadow: 0px 5px 10px 2px rgba(175, 175, 175, 0.2);
-    
+
 }
+
 .agreement {
     color: #afafaf;
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 30px;
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.checkbox_label {
+    position: relative;
+    padding-left: 20px;
+}
+
+.checkbox_label:before {
+    position: absolute;
+    content: "";
+    display: flex;
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    padding: 1px;
+    border: 1px solid #eee;
+    top: 0;
+    left: 0px;
+
+}
+
+.checkbox:checked + .checkbox_label:before {
+    content: "✓";
+    color: #7c7a7a;
+font-size: 16px;
+
+}
+
+.checkbox:focus + .checkbox_label:before {
+    box-shadow: 0 0 0 2px #3698FB;
 }
 
 .agreement a {
@@ -239,6 +285,6 @@ input[type="radio"] {
 
 .submit {
     border-radius: 5px;
-padding: 15px 60px;
-font-weight: bold;
+    padding: 15px 60px;
+    font-weight: bold;
 }
