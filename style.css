@@ -82,7 +82,10 @@ body {
     width: 15px;
     height: 15px;
     background: transparent url('./img/facebook.svg') no-repeat center center;
+<<<<<<< HEAD
 
+=======
+>>>>>>> a6b36eaee281551ccec0b35343556dbf7b9fe82b
     left: 15px;
 }
 
@@ -97,7 +100,10 @@ body {
     width: 15px;
     height: 15px;
     background: transparent url('./img/linkedin.svg') no-repeat center center;
+<<<<<<< HEAD
     background-size: contain;
+=======
+>>>>>>> a6b36eaee281551ccec0b35343556dbf7b9fe82b
     left: 15px;
 }
 
@@ -285,6 +291,12 @@ font-size: 16px;
 
 .submit {
     border-radius: 5px;
+<<<<<<< HEAD
     padding: 15px 60px;
     font-weight: bold;
 }
+=======
+padding: 15px 60px;
+font-weight: bold;
+}
+>>>>>>> a6b36eaee281551ccec0b35343556dbf7b9fe82b
